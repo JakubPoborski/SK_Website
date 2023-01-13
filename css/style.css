@@ -1,0 +1,77 @@
+:root {
+    --black: #171321;
+    --white: #f7f8fa;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: aqua;
+    border: var(--black) 1px;
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+  }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+#intro {
+    background-color: bisque;
+}
+
+#about {
+    background-color: blue;
+}
+
+#studio {
+    background-color: azure;
+}
+
+#oferta {
+    background-color: cornflowerblue;
+}
+
+footer {
+    background-color: crimson;
+}
