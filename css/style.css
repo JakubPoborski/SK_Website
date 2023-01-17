@@ -1,6 +1,7 @@
 :root {
     --black: #171321;
     --white: #f7f8fa;
+    --orange: rgb(255, 61, 0) !important;
 }
 
 html {
@@ -10,14 +11,24 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--black);
 }
 
 nav {
-    background-color: aqua;
-    border: var(--black) 1px;
-    font-family: var(--mono);
-    font-size: 80%;
-    padding: 1rem;
+  margin: 0 auto;
+  background-color: #393E46;
+  border: var(--black) 1px;
+  font-family: var(--mono);
+  font-size: 100%;
+  padding: 1rem;
 }
 
 nav ul {
@@ -32,21 +43,37 @@ nav ul {
 }
 
 nav a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
-    display: block;
+    display: flex;
+  }
+
+nav li:first-child {
+  font-size:  100%;
+}
+
+nav a:hover, nav [class*="fa-"]:hover{
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.logo {
+  max-height: 4rem;
+  max-width: 4rem;
+  vertical-align: middle;
+  margin-right: 2px;
   }
 
 .sticky {
   position: sticky;
+  background-color: rgba(57, 62, 70, 0.8);
   top: 0;
   width: 100%;
 }
 
 @media (min-width: 850px) {
   nav {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 ;
   }
   
   nav li:first-child {
@@ -56,22 +83,47 @@ nav a {
   }
 }
 
+.content {
+  margin-top: 0;
+}
+
 #intro {
-    background-color: bisque;
+    background-color: var(--orange);
+    
+}
+
+img {
+  display: block;
+}
+
+span h1 {
+  color: var(--orange);
+  text-decoration:  none;
 }
 
 #about {
-    background-color: blue;
+    background-color: #393E46;
 }
 
 #studio {
-    background-color: azure;
-}
+    background-color: var(--orange);
+}   
 
 #oferta {
-    background-color: cornflowerblue;
+    background-color: #393E46;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+section p {
+    color: var(--white);
 }
 
 footer {
-    background-color: crimson;
+    background-color: #EEEEEE;
+    text-align: center;
+
 }
