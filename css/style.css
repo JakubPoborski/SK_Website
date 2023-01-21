@@ -11,9 +11,14 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    margin-left: 3px;
-    margin-right: 3px;
+    /*margin-left: 3px;
+    margin-right: 3px;*/
     padding: 0;
+}
+
+section h2, footer h2 {
+  color: aliceblue;
+  text-align: center;
 }
 
 body {
@@ -52,7 +57,7 @@ nav li:first-child {
   font-size:  100%;
 }
 
-nav a:hover, nav [class*="fa-"]:hover{
+nav a:hover, nav [class*="fa-"]:hover, footer [class*="fa-"]:hover{
   color: var(--orange);
   text-decoration: none;
 }
@@ -69,6 +74,7 @@ nav a:hover, nav [class*="fa-"]:hover{
   background-color: rgba(57, 62, 70, 0.8);
   top: 0;
   width: 100%;
+  z-index: 1100;
 }
 
 @media (min-width: 850px) {
@@ -85,6 +91,12 @@ nav a:hover, nav [class*="fa-"]:hover{
 
 .content {
   margin-top: 0;
+  padding-left: 4px;
+  padding-right:  4px;
+}
+
+.divider {
+  margin-top: 20px;
 }
 
 #intro {
@@ -101,17 +113,7 @@ span h1 {
   text-decoration:  none;
 }
 
-#about {
-    background-color: #393E46;
-}
 
-#studio {
-    background-color: var(--orange);
-}   
-
-#oferta {
-    background-color: #393E46;
-}
 
 section {
   margin: 0;
@@ -119,11 +121,29 @@ section {
 }
 
 section p {
-    color: var(--white);
+    color: var(--black);
 }
 
 footer {
-    background-color: #EEEEEE;
+    background-color: var(--black);
     text-align: center;
 
+}
+
+footer a {
+  color: var(--white);
+  margin-left: 1.5rem;;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+small {
+  color: var(--white);
+}
+
+section .card {
+  color: var(--orange);
 }
