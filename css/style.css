@@ -133,7 +133,6 @@ section p {
 footer {
     background-color: var(--black);
     text-align: center;
-
 }
 
 footer a {
@@ -156,4 +155,37 @@ section .card {
 .address {
   margin-top: 1.5rem;
   color: var(--white);
+}
+
+#about-site{
+  padding: 0;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container div  {
+  padding: 1rem;
+}
+
+.contact-contact-details {
+  margin: 1 rem;
+}
+
+.contact-contact-details p{
+  margin: 0;
+  text-align: center;
+}
+
+.mini-map {
+  display: flex;
+}
+
+.footer-contact{
+  margin-bottom: 0 ;
+  padding-bottom: 0;
 }
